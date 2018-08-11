@@ -14,27 +14,11 @@ require 'pry'
   #   }
   # }
 
-# def remove_strawberry(contacts)
-#   contacts.each do |name, data|
-#     if name == "Freddy Mercury"
-#     data.each do |attribute, value|
-#       if attribute == :favorite_ice_cream_flavors
-#         value.each do |flavor|
-#           if flavor == "strawberry"
-#             value.delete("strawberry")
-#           end
-#         end
-#       end
-#     end
-#   end
-#   end
-# end
-
 def remove_strawberry(contacts)
   contacts.each do |name, data|
+    if name == "Freddy Mercury"
     data.each do |attribute, value|
       if attribute == :favorite_ice_cream_flavors
-        binding.pry
         value.each do |flavor|
           if flavor == "strawberry"
             value.delete("strawberry")
@@ -43,4 +27,7 @@ def remove_strawberry(contacts)
       end
     end
   end
+  end
 end
+
+
